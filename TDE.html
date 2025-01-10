@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trabajo de enfoque</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Verdana;
+        }
+
+        #titulo {
+            text-align: center;
+            font-size: 2.8em;
+            color: rgb(180, 180, 48);
+            background-color: #525050;
+        }
+
+        .inicio {
+            background-color: #525050;
+            font-size: 12px;
+            color: rgb(180, 180, 48);
+            border-radius: 10px;
+            padding: 10px;
+            float: left;
+            position: sticky;
+            bottom: 20px;
+        }
+
+        .inicio2 {
+            border: solid 2px black;
+            overflow: hidden;
+            background-color: #6d6b6b;
+            width: 75%;
+            margin-top: 2.2%;
+            box-shadow: 15px 15px 15px grey;
+        }
+
+        h3 {
+            text-align: center;
+            color: white;
+        }
+
+        h2 {
+            text-align: center;
+            padding: 15px;
+            color: rgb(180, 180, 48);
+            background-color: #525050;
+            margin-top: 0%;
+        }
+
+        .video {
+            font-weight: bold;
+            font-size: 2em;
+            margin-top: 50px;
+            margin-left: 730px;
+            background-color: #6d6b6b;
+            color: rgb(180, 180, 48);
+            width: 350px;
+            padding: 6px;
+            border-radius: 10px;
+        }
+
+        .vertical-menu a {
+            background-color: #6d6b6b;
+            color: rgb(180, 180, 48);
+            padding: 5px;
+            display: block;
+            /*Muestra los elementos en forma de bloque(lista de arriba hacia abajo)*/
+            text-decoration: none;
+        }
+
+        .vertical-menu a:hover {
+            background-color: #525050;
+        }
+
+        #izquierda {
+            float: left;
+            width: 250px;
+            height: 250px;
+        }
+
+        .imgWrapper4,
+        .imgWrapper3 {
+            text-align: center;
+        }
+
+        .imgWrapper4 .imgGaleria,
+        .imgWrapper3 .imgGaleria {
+            display: inline-block;
+            font-size: inherit;
+        }
+
+        .imgWrapper4 .imgGaleria {
+            width: 25%;
+            max-width: 345px;
+        }
+
+        .imgGaleria img {
+            height: auto;
+            width: 100%;
+        }
+
+        .contenido {
+            color: white;
+            padding: 15px;
+        }
+
+        .textoAlt {
+            color: white;
+            padding: 15px;
+        }
+
+        nav {
+            width: 15%;
+            float: left;
+            background-color: #525050;
+            margin: 20px;
+            border: solid 2px black;
+            box-shadow: 15px 15px 15px grey;
+        }        
+
+        .quienesSomos {
+            border: solid 2px black;
+
+            background-color: #6d6b6b;
+            width: 80%;
+            margin-left: 140px;
+            margin-top: 2.2%;
+            box-shadow: 15px 15px 15px grey;
+        }
+
+        .productosServicios {
+            border: solid 2px black;
+            background-color: #6d6b6b;
+            width: 80%;
+            margin-left: 140px;
+            margin-top: 40px;
+            box-shadow: 15px 15px 15px grey;
+        }
+
+        .iframe1 {
+            border: solid 2px black;
+            margin-left: 300px;
+            box-shadow: 15px 15px 15px grey;
+        }
+
+        table,
+        th,
+        td {
+            border: solid 1px black;
+            text-align: center;
+        }
+
+        .tftable {
+            font-size: 15px;
+            color: white;
+            border-width: 1px;
+        }
+
+        .tftable th:hover {
+            background-color: #292828;
+        }
+
+        th {
+            font-size: 18px;
+            color: rgb(180, 180, 48);
+        }
+
+        .tdtable {
+            padding: 10px;
+        }
+
+        .tdtable:hover {
+            background-color: #999595;
+        }
+
+        .contacto {
+            width: 80%;
+            background-color: #6d6b6b;
+            color: white;
+            margin-top: 50px;
+            margin-left: 140px;
+            border: solid 2px black;
+            box-shadow: 15px 15px 15px grey;
+        }
+
+        .contacto2 {
+            margin: 20px;
+        }
+
+        .contacto2:hover {
+            background-color: #999595;
+        }
+
+        .form1 {
+            float: right;
+            margin-top: 100px;
+            margin-right: 150px;
+            width: 575px;
+            background-color: #525050;
+        }
+
+        .form2 {
+            background-color: #6d6b6b;
+            color: white;
+            margin-top: -20px;
+            box-shadow: 15px 15px 15px grey;
+        }
+
+        .form3 {
+            width: 900px;
+
+        }
+
+        .trabaja {
+            width: 80%;
+            margin-top: 60px;
+            margin-left: 140px;
+        }
+
+        .pie {
+            text-align: center;
+            background-color: #cec7c7;
+            margin-top: 50px;
+            opacity: 0.8;
+            padding: 2px;
+            position: fixed;
+            bottom: 20px;
+        }
+
+        .visitar {
+            font-size: 20px;
+            color: black;
+            border-radius: 10px;
+            padding: 10px;
+            margin-left: -75px;
+        }
+
+        .redes {
+            width: 2%;
+            margin-bottom: -10px;
+            margin-left: 30px;
+        }
+
+        .envio {
+            margin-bottom: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="arriba">
+        <h1 id="titulo">Animal Pet 24</h1>
+    </header>
+    <nav>
+        <h3 id="p1">MENÚ</h3>
+        <div class="vertical-menu">
+            <a href="#p1">Inicio</a>
+            <a href="#p2">¿Quiénes somos?</a>
+            <a href="#p3">Productos y Servicios</a>
+            <a href="#p4">Contacto</a>
+            <a href="#p5">Trabaja con nosotros</a>
+        </div>
+    </nav>
+    <main class="inicio2">
+        <section>
+            <h2>Tienda de accesorios y complementos para tu mascota</h2>
+            <img src="imagenes/logo.png" alt="logo" title="logo" id="izquierda">
+            <p class="contenido">Productos de alta calidad para mascotas hechos con los <b>mejores
+                materiales</b>. Muy resistentes que hará que cada uno de los productos duren años.
+                Disponemos de una <b>amplia gama de productos</b> en nuestra tienda online.
+                Ponemos a su disposición un <b>gran equipo de expertos</b> en animales de compañía.
+                Trabajando únicamente con las <b>mejores marcas del mercado</b>.
+            </p>
+            <p class="contenido">En nuestra tienda de animales de compañía, nos dedicamos a brindar todo lo
+                necesario para el bienestar y felicidad de tus mascotas. Contamos con una amplia variedad de 
+                alimentos de alta calidad adaptados a cada etapa de su vida, así como accesorios prácticos, 
+                cómodos y estilosos. También encontrarás juguetes para su entretenimiento y productos 
+                especializados para su cuidado y salud. Nuestro equipo está siempre listo para asesorarte 
+                y ayudarte a encontrar lo mejor para tu fiel amigo. Porque sabemos que no son solo mascotas, 
+                ¡son parte de la familia!</p>
+            </section>
+    </main>
+    <br><br>
+    <hr>
+    <div class="quienesSomos">
+        <section>
+            <h2 id="p2">¿Quiénes somos?</h2>
+            <p class="contenido">En Animal Pet 24, somos más que una tienda online, somos amantes de los animales como
+                tú. Nacimos con la misión de <b>mejorar la vida de las mascotas</b> y sus familias, ofreciendo 
+                <b>productos de alta calidad</b>, consejos expertos y un servicio excepcional.
+                Sabemos que cada mascota es única y especial, por eso seleccionamos cuidadosamente los mejores
+                alimentos, accesorios, juguetes y productos de cuidado para garantizar su bienestar y felicidad. Trabajamos con <b>marcas
+                reconocidas y confiables</b> para que siempre encuentres lo mejor en un solo lugar.</p>
+            <p class="contenido">Nuestro equipo está compuesto por apasionados de los animales, siempre dispuestos a
+                ayudarte a encontrar lo que necesitas y a resolver cualquier duda que tengas. Además, apoyamos iniciativas 
+                para la protección y el cuidado de las mascotas porque <b>creemos en un mundo donde todos los animales 
+                puedan vivir felices y saludables</b>.</p>
+            <p class="contenido">Únete a nuestra familia de amantes de las mascotas y descubre cómo podemos ayudarte a
+                darles la vida que se merecen. <b>¡En Animal Pet 24, tu mascota es nuestra prioridad!</b>
+            </p>
+        </section>
+        <hr>
+        <p class="textoAlt" style="font-weight: bold;">Te presentamos a nuestro equipo de profesionales:</p><br>
+        <div class="imgWrapper4">
+            <div class="imgGaleria">
+                <img src="imagenes/ceo.jpg" alt="CEO" title="CEO">
+                <p>Laura Pérez García</p>
+                <p><b>CEO de Animal Pet 24</b></p>
+            </div>
+            <div class="imgGaleria">
+                <img src="imagenes/logistica.png" alt="logistica" title="logistica">
+                <p>Tomás López Martínez</p>
+                <p><b>Ténico de logística</b></p>
+            </div>
+            <div class="imgGaleria">
+                <img src="imagenes/marketing.jpg" alt="marketing" title="marketing">
+                <p>Izan Fernández Oliver</p>
+                <p><b>Técnico de marketing</b></p>
+            </div>
+            <div class="imgGaleria">
+                <img src="imagenes/administracion.jpg" alt="administracion" title="administracion">
+                <p>Lucía Encinas Madrigal</p>
+                <p><b>Técnico administrativo</b></p>
+            </div>
+        </div>
+    </div>
+
+    <h4 class="video">Video corporativo:</h4><br>
+    <iframe class="iframe1" width="1200" height="700" src="https://www.youtube.com/embed/5NLXQ640GXA"
+        title="Juguetes para perro"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br><br>
+    <hr>
+    <div class="productosServicios">
+        <h2 id="p3">Productos y Servicios</h2><br>
+        <table class="tftable">
+            <tr>
+                <th>Productos</th>
+                <th>Servicios</th>
+            </tr>
+            <tr>
+                <td class="tdtable"><b>Arnés de paseo. </b>Un arnés robusto pero suave y flexible para evitar rozadoras,
+                    transpirable e impermeable y con un diseño ergonómico muy fácil de poner
+                    mediante correas totalmente ajustables. Materiales resistentes y duraderos
+                    de gran calidad con zonas reflectantes para una gran visibilidad durante
+                    vuestros paseos nocturnos. Amplia variedad de tallas y colores para que
+                    sea el mas guapo!</td>
+                <td class="tdtable"><b>Servicio a Domicilio. </b>Comodidad y Confianza. Ahorra tiempo y esfuerzo con
+                    nuestro servicio a domicilio, diseñado para ofrecerte rapidez, confiabilidad
+                    y conveniencia. Desde alimentos hasta productos esenciales, llevamos lo que
+                    necesitas directamente a tu puerta. Con tecnología avanzada, seguimiento en
+                    tiempo real y opciones de pago seguras, garantizamos una experiencia cómoda
+                    y sin complicaciones. ¡Confía en nosotros para facilitar tu día a día!</td>
+            </tr>
+            <tr>
+                <td class="tdtable"><b>Correa cordino negro. </b>Nuestras líneas de correas de cordino son fáciles de
+                    llevar, robusto, con un agarre cómodo. Con tejidos de hilos fluorescentes para
+                    una buena visibilidad. Reforzado con cuero en las partes expuestas a mayor estrés
+                    en la parte de agarre y asegurar la estabilidad incluso con un gran esfuerzo físico.
+                    Estas correas se combinan bien con cualquier tipo de collares y arneses.</td>
+                <td class="tdtable"><b>Entrega express. </b>Ofrecemos un servicio de entrega express rápido, confiable
+                    y seguro para llevar tus pedidos a su destino en tiempo récord. Optimiza tu logística
+                    con nosotros y disfruta de la tranquilidad de un servicio eficiente y profesional.</td>
+            </tr>
+            <tr>
+                <td class="tdtable"><b>Pelota de caucho natural. </b>Las pelotas son los juguetes para perros más utilizados,
+                    por eso es fundamental tener uno de alta calidad, bien diseñado y que cumpla con todos
+                    los requisitos del perro y del guía. Nuestras pelotas están hechas de caucho natural,
+                    el agarre es realmente cómodo para el perro gracias al diseño especial de la superficie.
+                    La sujeción de la cuerda es muy estable, incluso durante el uso intensivo, la cuerda en sí
+                    tiene una gran resistencia a la tracción. El producto está disponible en 3 tamaños, por lo
+                    que puedes encontrar el adecuado sea cual sea la raza que tengas. El color de la cuerda
+                    puede variar.</td>
+                <td class="tdtable"><b>Recogida en tienda. </b>Facilitamos tu experiencia de compra con nuestro práctico
+                    servicio de recogida en tienda. Realiza tu pedido en línea desde la comodidad de tu hogar
+                    y recógelo en el momento que mejor te convenga. Olvídate de las filas y los tiempos de
+                    espera; garantizamos un proceso rápido, seguro y eficiente para que disfrutes de tus productos
+                    sin complicaciones.</td>
+            </tr>
+            <tr>
+                <td class="tdtable"><b>Trapo para morder. </b>Los trapos para morder son herramientas para perros principiantes
+                    con mordida en desarrollo. El movimiento del juguete de cuero o algodón/nylon imita los
+                    movimientos impredecibles de una presa real, por lo que es adecuado para desencadenar y
+                    estimular el instinto depredador. El perro debe prestar atención para agarrarlo con firmeza
+                    porque el material es resbaladizo por naturaleza. Tanto la versión de cuero como la de algodón/nylon
+                    son duraderas, resistentes y resistentes. El color del producto puede variar.</td>
+                <td class="tdtable"><b>Asesoramiento y contenido educativo. </b>Tener una mascota es una de las
+                    experiencias más
+                    gratificantes, pero también implica una gran responsabilidad. Desde perros y gatos hasta aves,
+                    roedores y reptiles, cada mascota tiene necesidades únicas que debemos comprender y atender.
+                    Nuestro objetivo es ayudarte a cuidar mejor a tu compañero peludo, emplumado o escamoso.
+                    Ofrecemos asesoramiento personalizado y contenido educativo para que puedas garantizar su
+                    bienestar, felicidad y salud.</td>
+            </tr>
+            <tr>
+                <td class="tdtable"><b>Collar cuero hecho a mano. </b>Una combinación especial de una correa textil
+                    cubierta con cuero de 5/64 pulgadas / 2 mm de espesor y almohadillas de distribución de presión,
+                    resultando en un collar de cuero extra suave pero muy fuerte, con una capacidad de carga estática
+                    probada de más de 880 lb / 400 kg. Mango ajustable y cerrable. Disponible en diferentes longitudes.
+                    Hecho a mano por los guarnicioneros.</td>
+                <td class="tdtable"><b>Atención al cliente personalizada. </b>Comprar en línea en una tienda de
+                    artículos para mascotas es una opción práctica y conveniente,
+                    ya que permite adquirir productos desde cualquier lugar y en cualquier momento, con acceso a una
+                    amplia variedad de opciones. Además, facilita la comparación de precios, ofrece la comodidad de
+                    recibir los pedidos a domicilio y permite consultar reseñas de otros compradores para tomar
+                    decisiones más informadas.</td>
+            </tr>
+        </table>
+    </div><br><br>
+    <hr>
+    <div class="contacto">
+        <h2 id="p4">Contacto</h2>
+        <form action="proceso.php" method="post">
+            <fieldset class="form1">
+                <legend><h4 style="color:rgb(180, 180, 48)">Solicitud de información:</h4></legend>
+                <label for="nombre"><b>Nombre: </b></label>
+                <input type="text" id="nombre" name="nombre" size="45" placeholder="Indicar nombre y apellidos." required><br><br>
+
+                <label for="email"><b>E-mail: </b></label>
+                <input type="text" name="email" id="email" size="40" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"><br><br>
+
+                <label for="telefono"><b>Teléfono: </b></label>
+                <input type="text" id="telefono" name="telefono" size="20" pattern="[0-9]{9}"><br><br>
+
+                <label for="datos"><textarea id="datos" name="datos" rows="5" cols="45" placeholder="Indique aquí información adicional."></textarea></label><br><br>
+
+                <p style="color:rgb(180, 180, 48)"><b>Envío:</b>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="borrar"></p>
+            </fieldset>   
+        </form>
+        <p><span class="contacto2"><b>Teléfono: </b>666-666-666</span></p>
+        <p><span class="contacto2"><b>Localización:</b></span>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25024.325151410238!2d-0.4227072!3d38.3711812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1734376478359!5m2!1ses!2ses"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" class="contacto2"></iframe>
+    </div><br><br>
+    <hr>
+    <div class="trabaja">
+        <h2 id="p5">Trabaja con nosotros</h2>
+        <form class="form2" action="proceso2.php" method="post">
+            <fieldset>
+                <legend><h4 style="color:rgb(180, 180, 48)">Datos personales:</h4></legend>
+                <label for="nombre2"><b>Nombre:</b></label>
+                <input type="text" id="nombre2" name="nombre2" size="45" placeholder="Indicar nombre." required><br><br>
+
+                <label for="apellidos"><b>Apellidos: </b></label>
+                <input type="text" id="apellidos" name="apellidos" size="45" placeholder="Indicar apellidos." required><br><br>
+
+                <label for="dni"><b>DNI: </b></label>
+                <input type="text" id="dni" name="dni" size="14" placeholder="Introduzca su DNI." pattern="[0-9]{8}[A-Za-z]{1}" required><br><br>
+
+                <label for="sexo"><b>Sexo: </b></label>
+                <input type="radio" id="sexo" name="p1">Hombre
+                <input type="radio" name="p1">Mujer<br><br>
+
+                <label for="fechaNac"><b>Fecha de nacimiento: </b></label>
+                <input type="date" id="fechaNac" name="fechaNac" max="2025-03-21" min="1960-01-01"><br><br>
+
+                <label for="ciudad"><b>Ciudad: </b></label>
+                <input type="text" id="ciudad" name="ciudad" size="30" placeholder="Introduzca su ciudad."><br><br>
+
+                <label for="nacionalidad"><b>Nacionalidad: </b></label>
+                <input type="text" id="nacionalidad" name="nacionalidad" size="30" placeholder="Indicar nacionalidad:"><br><br>
+
+                <label for="cp"><b>Código postal: </b></label>
+                <input type="text" id="cp" name="cp" size="8" pattern="[0-9]{5}" placeholder="C.P."><br><br>
+
+                <label for="telefono2"><b>Teléfono: </b></label>
+                <input type="text" id ="telefono2" name="telefono2" size="20" pattern="[0-9]{9}" placeholder="Introduzca su teléfono."><br><br>
+
+                <label for="email2"><b>E-mail: </b></label>
+                <input type="email" name="email2" id="email2" size="40" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Introduzca su email."><br>
+            </fieldset><br>
+
+            <fieldset>
+                <legend><h4 style="color:rgb(180, 180, 48)">Formación:</h4></legend>
+                <p style="font-weight: bold;">Añadir titulaciones:</p><br>
+                <fieldset class="form3">                
+                    <label for="titulacion"><b>Titulación 1: </b></label>
+                    <input type="text" id="titulacion" name="titulacion" size="75" placeholder="Añadir titulación (opcional)."><br><br>
+
+                    <label for="añoInic"><b>Fecha inicio: </b></label>
+                    <input type="date" id="añoInic" name="añoInic" max="2025-03-21" min="1990-01-01">
+
+                    <label for="añoFin"><b>Fecha fin: </b></label>
+                    <input type="date" id="añoFin" name="añoFin" max="2025-03-21" min="1990-01-01">
+                </fieldset><br><br>
+
+                <fieldset class="form3">
+                    <label for="titulacion2"><b>Titulación 2: </b></label>
+                    <input type="text" id="titulacion2" name="titulacion2" size="75" placeholder="Añadir titulación (opcional)."><br><br>
+
+                    <label for="añoInic2"><b>Fecha inicio: </b></label>
+                    <input type="date" id="añoInic2" name="añoInic2" max="2025-03-21" min="1990-01-01">
+
+                    <label for="añoFin2"><b>Fecha fin: </b></label>
+                    <input type="date" id="añoFin2" name="añoFin2" max="2025-03-21" min="1990-01-01">   
+                </fieldset><br><br>
+
+                <fieldset class="form3">
+                    <label for="titulacion3"><b>Titulación 3: </b></label>
+                    <input type="text" id="titulacion3" name="titulacion3" size="75" placeholder="Añadir titulación (opcional)."><br><br>
+
+                    <label for="añoInic3"><b>Fecha inicio: </b></label>
+                    <input type="date" id="añoInic3" name="añoInic3" max="2025-03-21" min="1990-01-01">
+
+                    <label for="añoFin3"><b>Fecha fin: </b></label>
+                    <input type="date" id="añoFin3" name="añoFin3" max="2025-03-21" min="1990-01-01">   
+                </fieldset><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend><h4 style="color:rgb(180, 180, 48)">Idiomas:</h4></legend>
+                <p>Añadir idioma: 
+                <input type="text" id="idioma" name="idioma">
+                <label for="idioma">Hablado: </label>
+                <select name="Hablado: ">
+                    <option value="" selected="selected">Seleccionar</option>
+                    <option value="1">Excelente</option>
+                    <option value="2">Bien</option>
+                    <option value="3">Regular</option>
+                    <option value="4">Nada</option>
+                </select>
+                <label for="idioma">Leído: </label>
+                <select name="Leído: ">
+                    <option value="" selected="selected">Seleccionar</option>
+                    <option value="1">Excelente</option>
+                    <option value="2">Bien</option>
+                    <option value="3">Regular</option>
+                    <option value="4">Nada</option>
+                </select>
+                <label for="idioma">Escrito: </label>
+                <select name="Escrito: ">
+                    <option value="" selected="selected">Seleccionar</option>
+                    <option value="1">Excelente</option>
+                    <option value="2">Bien</option>
+                    <option value="3">Regular</option>
+                    <option value="4">Nada</option>
+                </select></p><br>
+
+                <p>Añadir idioma: 
+                <input type="text" id="idioma2" name="idioma2">
+                <label for="idioma2">Hablado: </label>
+                <select name="Hablado: ">
+                    <option value="" selected="selected">Seleccionar</option>
+                    <option value="1">Excelente</option>
+                    <option value="2">Bien</option>
+                    <option value="3">Regular</option>
+                    <option value="4">Nada</option>
+                </select>
+                <label for="idioma2">Leído: </label>
+                <select name="Leído: ">
+                    <option value="" selected="selected">Seleccionar</option>
+                    <option value="1">Excelente</option>
+                    <option value="2">Bien</option>
+                    <option value="3">Regular</option>
+                    <option value="4">Nada</option>
+                </select>
+                <label for="idioma2">Escrito: </label>
+                <select name="Escrito: ">
+                    <option value="" selected="selected">Seleccionar</option>
+                    <option value="1">Excelente</option>
+                    <option value="2">Bien</option>
+                    <option value="3">Regular</option>
+                    <option value="4">Nada</option>
+                </select></p><br>
+
+                <p>Añadir idioma: 
+                <input type="text" id="idioma3" name="idioma3">
+                <label for="idioma3">Hablado: </label>
+                <select name="Hablado: ">
+                    <option value="" selected="selected">Seleccionar</option>
+                    <option value="1">Excelente</option>
+                    <option value="2">Bien</option>
+                    <option value="3">Regular</option>
+                    <option value="4">Nada</option>
+                </select>
+                <label for="idioma3">Leído: </label>
+                <select name="Leído: ">
+                    <option value="" selected="selected">Seleccionar</option>
+                    <option value="1">Excelente</option>
+                    <option value="2">Bien</option>
+                    <option value="3">Regular</option>
+                    <option value="4">Nada</option>
+                </select>
+                <label for="idioma3">Escrito: </label>
+                <select name="Escrito: ">
+                    <option value="" selected="selected">Seleccionar</option>
+                    <option value="1">Excelente</option>
+                    <option value="2">Bien</option>
+                    <option value="3">Regular</option>
+                    <option value="4">Nada</option>
+                </select></p>               
+            </fieldset> 
+
+            <fieldset class="envio">
+                <legend><h4 style="color:rgb(180, 180, 48)"><b>Envío:</b></h4></legend>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+            </fieldset>          
+        </form>  
+    </div>
+    <footer class="pie">         
+        <p><a href="#arriba"><span class="inicio">Volver a inicio</span></a> 
+        <a><span class="visitar">También puedes visitarnos en: </span></a>
+            <img src="imagenes/insta.png" alt="Instagram" title="Instagram" class="redes"> 
+            <span>animalpet24</span>
+            <img src="imagenes/facebook.png" alt="Facebook" title="Facebook" class="redes"> 
+            <span>animalpet24</span>   
+            <img src="imagenes/X_logo.jpg" alt="X" title="X" class="redes">
+            <span>animalpet24</span>  
+            <img src="imagenes/tiktok.png" alt="tiktok" title="tiktok" class="redes">
+            <span>animalpet24</span>      
+        </p>        
+    </footer>             
+</body>
+
+</html>
